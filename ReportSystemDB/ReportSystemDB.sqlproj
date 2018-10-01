@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{dee46c4b-20c9-49d9-87bf-fafd0e87551d}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -57,5 +57,16 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="table" />
+    <Folder Include="storedProcedure" />
+    <Folder Include="view" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="table\Report.sql" />
+    <Build Include="table\Board.sql" />
+    <Build Include="table\ReportHistory.sql" />
+    <Build Include="table\Group.sql" />
+    <Build Include="table\Destination.sql" />
+    <Build Include="table\User.sql" />
   </ItemGroup>
 </Project>
