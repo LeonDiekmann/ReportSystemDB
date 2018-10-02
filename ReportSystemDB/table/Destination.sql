@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Destination]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[Name] VARCHAR(256) NOT NULL,
 	[BoardId] INT NOT NULL REFERENCES Board(Id),
-	[location] INT NOT NULL,
+	[Location] VARCHAR(256) NOT NULL,
 	[CreationTime] DATETIME2(7) DEFAULT getDate() NOT NULL,
 	[DeleteTime] DATETIME2(7)
 )

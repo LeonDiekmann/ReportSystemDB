@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Report]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[CreatorId] INT NOT NULL REFERENCES [dbo].[User](Id),
 	[ImageUrl] VARCHAR(256),
 	[ShortDescription] VARCHAR(256),

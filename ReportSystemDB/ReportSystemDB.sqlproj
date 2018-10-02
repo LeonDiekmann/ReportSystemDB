@@ -68,5 +68,17 @@
     <Build Include="table\Group.sql" />
     <Build Include="table\Destination.sql" />
     <Build Include="table\User.sql" />
+    <Build Include="view\viBoard.sql" />
+    <Build Include="view\viDestination.sql" />
+    <Build Include="view\viGroup.sql" />
+    <Build Include="view\viReport.sql" />
+    <Build Include="view\viReportHistory.sql" />
+    <Build Include="view\viUser.sql" />
+    <Build Include="storedProcedure\spAddOrUpdateBoard.sql" />
+    <Build Include="storedProcedure\spAddOrUpdateDestination.sql" />
+    <Build Include="storedProcedure\spAddOrUpdateGroup.sql" />
+    <Build Include="storedProcedure\spAddOrUpdateReport.sql" />
+    <Build Include="storedProcedure\spAddOrUpdateReportHistory.sql" />
+    <Build Include="storedProcedure\spAddOrUpdateUser.sql" />
   </ItemGroup>
 </Project>

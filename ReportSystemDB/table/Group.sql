@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Group]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[UacGroup] INT NOT NULL,
 	[BoardId] INT NOT NULL REFERENCES Board(Id),
 	[CreationTime] DATETIME2(7) DEFAULT getDate() NOT NULL,

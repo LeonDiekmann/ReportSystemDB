@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ReportHistory]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[Status] INT NOT NULL,
 	[UserId] INT REFERENCES [dbo].[User](Id),
 	[GroupId] INT NOT NULL REFERENCES [dbo].[Group](Id),
